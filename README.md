@@ -1,2 +1,2 @@
-# odyssey-g7-scanlines
-Screentest for Samsung Odyssey G7, to test the scanlines issue
+# Samsuns Odyssey G7 - Scanlines Test
+I created a minimum reproducible test for trying to find what triggers the scanlines issue with the Odyssey G7.
