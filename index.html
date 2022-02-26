@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <style data-merge-styles="true"></style>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
     <title>Scanlines Test - Samsung Odyssey G7</title>
@@ -15,12 +13,63 @@
     <meta name="keyword" content="Samsung, Odyssey, Odyssey G7, Samsung Odyssey G7, Scanlines">
 
     <style>
-        body {
-            background-color: black;
-            background: url(../bg.png) 0 0 repeat;
-        }
+		html {
+			background-color: white;
+			height: 100%;
+			width: 100%;
+			font-family:sans-serif;
+		}
+
+		body {
+			background: url(./bg.png) 0 0 repeat;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+		}
+
+		body > * {
+			color: white;
+			font-size: 30px;
+			margin: 0.25rem;	
+		}
+
+		h1 {
+			margin: 1rem;
+		}
+
+		em {
+			color: gray;
+		}
+
+		footer {
+			width: 80%;
+			height: 50px;
+			background-image: -webkit-gradient(linear, left top, right top, color-stop(0.01, #ff0000), color-stop(0.08, #ff0088), 
+				color-stop(0.16, #ff00ff), color-stop(0.24, #8800ff), color-stop(0.32, #0000ff), color-stop(0.40, #0088ff), 
+				color-stop(0.48, #00ffff), color-stop(0.56, #00ff88), color-stop(0.64, #00ff00), color-stop(0.72, #88ff00), 
+				color-stop(0.80, #ffff00), color-stop(0.88, #ff8800), color-stop(0.99, #ff0000));
+			background-image: -moz-linear-gradient(left center, #ff0000 1%, #ff0088 8%, #ff00ff 16%, #8800ff 24%, #0000ff 32%, #0088ff 40%,
+			 #00ffff 48%, #00ff88 56%, #00ff00 64%, #88ff00 72%, #ffff00 80%, #ff8800 88%, #ff0000 99%);
+		}
     </style>
 </head>
 <body>
-    <p>Do you see the scanlines?</p>
+	<h1>Samsung Odyssey G7 Test</h1>
+	<p>Do you see the scanlines?</p>
+	<p>Try changing the zoom up/down until you start/stop seeing.</p>
+	<br>
+	<em>This page has a fine-mesh background (2x2px image on repeat).</em>
+	<em>For some reason the monitor doesn't handle that well.</em>
+	<br>
+	<p>It's triggered (in my case) with a window size of 484x78px or greater at 100%.</p>
+	<p>If you take a screenshot and try zooming it in Paint, it's possible to trigger <br> the issue even if the squares of the background mesh become visible to the eye.</p>
+	<br>
+	<footer></footer>
+	<br>
+	<em>For some reason, these scanlines only appear outside of the browser's viewport.</em>
+	<em>The 'soft' scanlines that appear in some colors above also appears when the 'hard' scanlines are not present.</em>
 </body>
